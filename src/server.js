@@ -19,7 +19,6 @@ app.use(userRouter);
 app.use(couponRouter);
 app.use(partnerRouter);
 app.use(addressRouter);
-app.use(categoryRouter);
 app.use(itemRouter);
 app.use(pointsRouter)
 app.use(categoryRouter);
