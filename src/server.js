@@ -6,6 +6,7 @@ import { addressRouter } from './routes/address.routes.js';
 import { itemRouter } from './routes/item.routes.js';
 import { categoryRouter } from './routes/category.routes.js';
 import { pointsRouter } from './routes/collectionpoints.routes.js';
+import { categoryRouter } from './routes/category.routes.js';
 
 
 
@@ -21,6 +22,7 @@ app.use(addressRouter);
 app.use(categoryRouter);
 app.use(itemRouter);
 app.use(pointsRouter)
+app.use(categoryRouter);
 
 
 
