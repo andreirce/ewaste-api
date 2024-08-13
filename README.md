@@ -9,7 +9,7 @@ A API e-waste foi criada para enfrentar o problema do descarte inadequado de res
 
 Este projeto foi desenvolvido como parte do Módulo 4 da formação FullStack do Instituto Programadores do Amanhã.
 
-Acesse o link do slide : [EWASTE API SLIDE](https://www.canva.com/design/DAGNd0V7dTI/tlWOONF_KeEnXwTwysPq0Q/edit?utm_content=DAGNd0V7dTI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+Acesse o link do slide : [EWASTE API SLIDE](https://www.canva.com/design/DAGNd0V7dTI/t28Q1JnbW0DKUd2ZK57S3w/view?utm_content=DAGNd0V7dTI&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
 
 ## Índice🔗
@@ -54,6 +54,11 @@ Acesse o link do slide : [EWASTE API SLIDE](https://www.canva.com/design/DAGNd0V
 
 
 ## Estrutura do Projeto📁
+- **src/server.js**: 
+- **src/routes/user.js**:
+- **src/controllers/user.controllers.js**:
+- **src/models/user.model.js**:
+- **src/database/connection.js**:
 
 ## Modelagem de Dados🎲
 
@@ -77,7 +82,7 @@ npm install
 ```
 3. Para iniciar o servidor de desenvolvimento, use:
 ```bash
-npm run dev
+npm npm start
 ```
 
 ## Pessoas Desenvolvedoras🧑‍💻
@@ -110,8 +115,20 @@ npm run dev
     </td>
     <td align="center">
       <a href="https://github.com/hewelbelmonte">
-        <img src="https://avatars.githubusercontent.com/u/130703340?v=4" width="115" alt="Andrei Levi"/><br />
+        <img src="https://avatars.githubusercontent.com/u/130703340?v=4" width="115" alt="Hewel Belmonte"/><br />
         <sub><b>Hewel Belmonte</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/DeboraVitoria0">
+        <img src="#" width="115" alt="Débora Vitória"/><br />
+        <sub><b>Débora Vitória</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/GabrielRER">
+        <img src="#" width="115" alt="Gabriel Ramon"/><br />
+        <sub><b>Gabriel Ramon</b></sub>
       </a>
     </td>
   </tr>
@@ -119,4 +136,4 @@ npm run dev
 
 
 ## Licença🔓
-Este projeto é lincensiado por :[Licença GPL-3.0](https://github.com/ste-coding/miniprojeto-api-M4?tab=GPL-3.0-1-ov-file#readme)
+Este projeto é lincensiado por :[Licença GPL-3.0](https://github.com/ste-coding/squad4-projeto-final-M4?tab=GPL-3.0-1-ov-file)
