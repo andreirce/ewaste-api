@@ -11,8 +11,8 @@ const swaggerDefinition = {
     },
     servers: [
         {
-            url: 'http://localhost:4000',
-            description: 'Servidor local',
+            url: 'https://squad4-projeto-final-m4.onrender.com',
+            description: 'URL from the API',
         },
     ],
 };
