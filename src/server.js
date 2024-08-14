@@ -7,6 +7,8 @@ import { addressRouter } from './routes/address.routes.js';
 import { itemRouter } from './routes/item.routes.js';
 import { categoryRouter } from './routes/category.routes.js';
 import { pointsRouter } from './routes/collectionpoints.routes.js';
+import setupSwaggerDocs from './config/swagger.js'; // Importar configuração do Swagger
+
 
 
 const app = express();
@@ -21,8 +23,11 @@ app.use(partnerRouter);
 app.use(addressRouter);
 app.use(categoryRouter);
 app.use(itemRouter);
-app.use(pointsRouter)
+app.use(pointsRouter);
+
+setupSwaggerDocs(app);
+
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+  console.log(`Example app listening on port ${port}`);
+});
