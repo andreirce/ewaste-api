@@ -1,37 +1,56 @@
-import { DataTypes } from 'sequelize';
-import { database } from '../database/connection.js';
+import { DataTypes } from 'sequelize'
 import { User } from './User.model.js';
+import { Category } from './Category.model.js';
+import { Partner } from './Partner.model.js';
+import { database } from '../database/connection.js';
+
 
 export const Item = database.define('Item',
   {
-    id: {
+    item_id: {
       type: DataTypes.UUID,
       primaryKey: true,
       defaultValue: DataTypes.UUIDV4
     },
 
-    name: {
+    item_name: {
       type: DataTypes.STRING(255),
       allowNull: false
     },
 
-    description: {
-      type: DataTypes.STRING(500),
+    physical_condition: {
+      type: DataTypes.STRING(50),
       allowNull: false
     },
 
-    category: {
-      type: DataTypes.STRING(100),
-      allowNull: false
+    partner_id: {
+      type: DataTypes.UUID,
+      allowNull: false,
+      references: {
+        model: Partner,
+        key: 'id'
+    }
     },
 
     user_id: {
       type: DataTypes.UUID,
-      allowNull: true,
+      allowNull: false,
       references: {
-        model: User, 
+        model: User,
         key: 'id'
+    }
+    },
+    
+    category_id: {
+        type: DataTypes.UUID,
+        allowNull: false,
+        references: {
+            model: Category,
+            key: 'category_id'
       }
     }
+  },
+  {
+    tableName: 'Item'
   }
 );
