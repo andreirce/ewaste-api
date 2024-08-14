@@ -4,10 +4,10 @@ import { Partner } from "../models/Partner.model.js";
 export const createPartner = async (req, res) => {
     try {
         
-        const { manufacturer_name, email, cnpj, phone, address_id } = req.body;
+        const { partner_name, email, cnpj, phone, address_id } = req.body;
 
         await Partner.sync();
-        const newPartner = await Partner.create({ manufacturer_name, email, cnpj, phone, address_id});
+        const newPartner = await Partner.create({ partner_name, email, cnpj, phone, address_id});
         return res.status(201).json({ newPartner });
 
     } catch (error) {
