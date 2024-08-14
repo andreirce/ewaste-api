@@ -1,12 +1,12 @@
 import { Router } from 'express';
-import { createUser, deleteUser, getAllUser, updateUser } from '../controllers/user.controller.js';
+import { createPartner, deletePartner, getAllPartner, updatePartner } from '../controllers/partner.controller.js';
 
 
-const userRouter = Router();
+const partnerRouter = Router();
 
-userRouter.post('/user', createUser);
-userRouter.get('/user', getAllUser);
-userRouter.delete('/user/:id', deleteUser);
-userRouter.put('/user/:id', updateUser);
+partnerRouter.post('/partner', createPartner);
+partnerRouter.get('/partner', getAllPartner);
+partnerRouter.delete('/partner/:id', deletePartner);
+partnerRouter.put('/partner/:id', updatePartner);
 
-export { userRouter }
+export { partnerRouter }
