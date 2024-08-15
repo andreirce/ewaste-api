@@ -21,7 +21,7 @@ export const getAllCategory = async (req,res) => {
     try {
 
         const category = await Category.findAll();
-        return res.status(201).json({category});
+        return res.status(200).json({category});
 
     } catch (error) {
 
@@ -36,7 +36,7 @@ export const deleteCategory = async (req,res) => {
             category_id: id
         },
     });
-    return res.status(201).json({message: 'categoria deletado com sucesso'})
+    return res.status(201).json({message: 'categoria deletada com sucesso'})
 }
 
 export const updatedCategory = async (req,res) => {
@@ -50,5 +50,5 @@ export const updatedCategory = async (req,res) => {
         }}
     )
 
-    return res.status(200).json({message: 'categoria editada com sucesso'})
+    return res.status(201).json({message: 'categoria editada com sucesso'})
 }
