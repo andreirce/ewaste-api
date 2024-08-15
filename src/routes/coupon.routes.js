@@ -7,7 +7,7 @@ export const couponRouter = express.Router();
  * @swagger
  * tags:
  *   - name: Coupon
- *     description: Operações relacionadas a cupons
+ *     description: Operações relacionadas aos cupons;
  */
 
 /**

@@ -7,7 +7,7 @@ export const addressRouter = express.Router();
  * @swagger
  * tags:
  *   - name: Address
- *     description: Operações relacionadas a endereços
+ *     description: Centraliza os endereços
  */
 
 /**

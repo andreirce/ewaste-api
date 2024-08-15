@@ -7,7 +7,7 @@ export const categoryRouter = express.Router();
  * @swagger
  * tags:
  *   - name: Category
- *     description: Operações relacionadas a categorias
+ *     description: Define categoria dos itens
  */
 
 /**

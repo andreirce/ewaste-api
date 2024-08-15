@@ -7,7 +7,7 @@ export const partnerRouter = express.Router();
  * @swagger
  * tags:
  *   - name: Partner
- *     description: Operações relacionadas a parceiros
+ *     description: Informações dos fabricantes parceiros
  */
 
 /**

@@ -7,7 +7,7 @@ export const itemRouter = express.Router();
  * @swagger
  * tags:
  *   - name: Item
- *     description: Operações relacionadas a itens
+ *     description: Referente aos itens cadastrados para descarte;
  */
 
 /**

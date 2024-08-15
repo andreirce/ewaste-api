@@ -7,7 +7,7 @@ export const pointsRouter = express.Router();
  * @swagger
  * tags:
  *   - name: CollectionPoints
- *     description: Operações relacionadas a pontos de coleta
+ *     description: Operações relacionadas aos pontos de coleta
  */
 
 /**

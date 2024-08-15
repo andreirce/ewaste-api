@@ -7,7 +7,7 @@ export const userRouter = express.Router();
  * @swagger
  * tags:
  *   - name: User
- *     description: Operações relacionadas a usuários
+ *     description: Configuração dos usuários
  */
 
 /**
@@ -38,8 +38,6 @@ userRouter.get('/user', getAllUser);
  *               name:
  *                 type: string
  *               email:
- *                 type: string
- *               password:
  *                 type: string
  *               cpf:
  *                 type: string
