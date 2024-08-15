@@ -1,10 +1,10 @@
-import { User } from './User.model.js';
-import { Address } from './Address.model.js';
-import { Item } from './Item.model.js';
-import { CollectionPoint } from './CollectionPoint.model.js';
-import { Category } from './Category.model.js';
-import { Partner } from './Partner.model.js';
-import { Coupon } from './Coupon.model.js';
+import { User } from '../models/User.model.js';
+import { Address } from '../models/Address.model.js';
+import { Item } from '../models/Item.model.js';
+import { CollectionPoint } from '../models/CollectionPoint.model.js';
+import { Category } from '../models/Category.model.js';
+import { Partner } from '../models/Partner.model.js';
+import { Coupon } from '../models/Coupon.model.js';
 
 User.belongsTo(Address, { foreignKey: 'address_id' });
 Address.hasMany(User, { foreignKey: 'address_id' });

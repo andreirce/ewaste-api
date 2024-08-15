@@ -1,4 +1,5 @@
 import { CollectionPoint } from '../models/CollectionPoint.model.js';
+import { Address } from '../models/Address.model.js';
 
 
 export const createPoint = async (req, res) => {
@@ -70,7 +71,7 @@ export const updatePoints = async (req,res) => {
 
         {
           where: {
-            id
+            where: { collection_point_id: id }
           }
         }
       )
