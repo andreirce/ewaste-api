@@ -1,5 +1,5 @@
 import express from 'express';
-import corsConfig from './config/cors-config.js';
+import corsConfig from './config/cors.config.js';
 import { userRouter } from './routes/user.routes.js';
 import { couponRouter } from './routes/coupon.routes.js';
 import { partnerRouter } from './routes/partner.routes.js';
@@ -7,7 +7,7 @@ import { addressRouter } from './routes/address.routes.js';
 import { itemRouter } from './routes/item.routes.js';
 import { categoryRouter } from './routes/category.routes.js';
 import { pointsRouter } from './routes/collectionpoints.routes.js';
-import setupSwaggerDocs from './config/swagger.js'; // Importar configuração do Swagger
+import setupSwaggerDocs from './config/swagger.js';
 
 
 
