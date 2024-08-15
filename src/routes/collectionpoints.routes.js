@@ -1,5 +1,5 @@
 import express from 'express';
-import { createPoint, getAllPoints, deletePoints, updatePoints } from '../controllers/collectionpoints.controller.js';
+import { createPoint, getAllPoints, getPointByCity, deletePoints, updatePoints } from '../controllers/collectionpoints.controller.js';
 
 export const pointsRouter = express.Router();
 
@@ -21,6 +21,33 @@ export const pointsRouter = express.Router();
  *         description: Lista de pontos de coleta.
  */
 pointsRouter.get('/points', getAllPoints);
+
+/**
+ * @swagger
+ * /city/{cityName}:
+ *   get:
+ *     summary: "Buscar pontos de coleta por cidade"
+ *     tags: [CollectionPoints]
+
+ *     description: "Retorna uma lista de pontos de coleta com base na cidade fornecida."
+ *     parameters:
+ *       - name: "cityName"
+ *         in: "path"
+ *         description: "Nome da cidade para buscar os pontos de coleta."
+ *         required: true
+ *         schema:
+ *           type: "string"
+ *     responses:
+ *       '200':
+ *         description: "Lista de pontos de coleta encontrados na cidade especificada."
+ *       '404':
+ *         description: "Nenhum ponto de coleta encontrado para a cidade especificada."
+ *       '500':
+ *         description: "Erro interno do servidor."
+ */
+
+pointsRouter.get('/city/:city', getPointByCity);
+
 
 /**
  * @swagger

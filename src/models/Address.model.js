@@ -54,3 +54,4 @@ export const Address = database.define('Address',
     tableName: 'Address'
   }
 );
+;

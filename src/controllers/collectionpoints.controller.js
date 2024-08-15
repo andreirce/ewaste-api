@@ -27,6 +27,28 @@ export const getAllPoints = async (req,res) => {
     }
 }
 
+export const getPointByCity = async (req, res) => {
+  try {
+      const { city } = req.params;
+
+      const points = await CollectionPoint.findAll({
+          include: {
+              model: Address,
+              where: { city }
+          }
+      });
+
+      if (points.length === 0) {
+          return res.status(404).json({ message: 'Nenhum ponto de coleta encontrado para esta cidade.' });
+      }
+
+      return res.status(200).json({ points });
+
+  } catch (error) {
+      return res.status(400).json({ messageError: error.message });
+  }
+}
+
 export const deletePoints = async (req,res) => {
 
     const { id } = req.params;
