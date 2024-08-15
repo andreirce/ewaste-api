@@ -1,32 +1,23 @@
 import { DataTypes } from 'sequelize'
 import { Address } from './Address.model.js';
+import { Category } from './Category.model.js';
 import { database } from '../database/connection.js';
 
-export const Partner = database.define('Partner',
+export const CollectionPoint = database.define('Collection_Point',
   {
-    partner_id: {
+    collection_point_id: {
       type: DataTypes.UUID,
       primaryKey: true,
       defaultValue: DataTypes.UUIDV4
     },
 
-    partner_name: {
+    responsible_company: {
       type: DataTypes.STRING(255),
       allowNull: false
     },
 
-
-    email: {
-      type: DataTypes.STRING(255),
-      allowNull: false
-    },
-
-    cnpj: {
-      type: DataTypes.CHAR(14),
-    },
-
-    phone: {
-      type: DataTypes.CHAR(15),
+    operating_hours: {
+      type: DataTypes.STRING(50),
     },
 
     address_id: {
@@ -36,9 +27,17 @@ export const Partner = database.define('Partner',
         model: Address,
         key: 'id'
       }
+    },
+
+    category_accepted: {
+      type: DataTypes.UUID,
+      references: {
+        model: Category,
+        key: 'category_id'
+      }
     }
   },
   {
-    tableName: 'Partner'
+    tableName: 'Collection_Point'
   }
 );

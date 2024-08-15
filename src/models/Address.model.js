@@ -3,7 +3,7 @@ import { database } from '../database/connection.js';
 
 export const Address = database.define('Address',
   {
-    id: {
+    address_id: {
       type: DataTypes.UUID,
       primaryKey: true,
       defaultValue: DataTypes.UUIDV4
@@ -49,5 +49,9 @@ export const Address = database.define('Address',
         allowNull: false
     },
     
+  },
+  {
+    tableName: 'Address'
   }
 );
+;

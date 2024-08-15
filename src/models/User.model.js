@@ -4,7 +4,7 @@ import { database } from '../database/connection.js';
 
 export const User = database.define('User',
   {
-    id: {
+    user_id: {
       type: DataTypes.UUID,
       primaryKey: true,
       defaultValue: DataTypes.UUIDV4
@@ -45,5 +45,8 @@ export const User = database.define('User',
         key: 'id'
       }
     }
+  },
+  {
+    tableName: 'User'
   }
 );

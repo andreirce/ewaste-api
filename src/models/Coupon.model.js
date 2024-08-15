@@ -1,44 +1,40 @@
 import { DataTypes } from 'sequelize'
-import { Address } from './Address.model.js';
+import { User } from './User.model.js';
 import { database } from '../database/connection.js';
 
-export const Partner = database.define('Partner',
+export const Coupon = database.define('Coupon',
   {
-    partner_id: {
+    coupon_id: {
       type: DataTypes.UUID,
       primaryKey: true,
       defaultValue: DataTypes.UUIDV4
     },
 
-    partner_name: {
-      type: DataTypes.STRING(255),
+    code: {
+      type: DataTypes.STRING(50),
       allowNull: false
     },
 
-
-    email: {
-      type: DataTypes.STRING(255),
+    discount_value: {
+      type: DataTypes.DECIMAL(10,2),
       allowNull: false
     },
 
-    cnpj: {
-      type: DataTypes.CHAR(14),
+    expiration_date: {
+      type: DataTypes.DATEONLY,
+      allowNull: false
     },
 
-    phone: {
-      type: DataTypes.CHAR(15),
-    },
-
-    address_id: {
+    user_id: {
       type: DataTypes.UUID,
       allowNull: false,
       references: {
-        model: Address,
+        model: User,
         key: 'id'
       }
     }
   },
   {
-    tableName: 'Partner'
+    tableName: 'Coupon'
   }
 );
