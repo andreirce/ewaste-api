@@ -80,15 +80,6 @@ npm start
 ```
 
 ## Pessoas Desenvolvedoras🧑‍💻  <a name="pessoas-desenvolvedoras"></a>
-<style>
-  #image {
-    height: 115px
-  }
-  #title {
-    font-size: 11.5px;
-  }
-
-</style>
 <table>
   <tr>
     <td align="center">
@@ -138,3 +129,13 @@ npm start
 
 ## Licença🔓  <a name="licenca"></a>
 Este projeto é lincensiado por :[Licença GPL-3.0](https://github.com/ste-coding/squad4-projeto-final-M4?tab=GPL-3.0-1-ov-file)
+
+<style>
+  #image {
+    height: 115px
+  }
+  #title {
+    font-size: 11.5px;
+  }
+
+</style>
