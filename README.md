@@ -86,43 +86,43 @@ npm start
     <td align="center">
       <a href="https://github.com/ste-coding">
         <img src="https://avatars.githubusercontent.com/u/83964857?v=4" width="115" alt="Stéphanie Cândido"/><br />
-        <sub><b>Sté Cândido</b></sub>
+        <sub><b>Stéphanie</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/Monteiro-Let">
         <img src="https://avatars.githubusercontent.com/u/154276458?s=400&u=1526f34b9402fadbe89b685308ed1224f27e717e&v=4" width="115" alt="Letícia Monteiro"/><br />
-        <sub><b>Letícia Monteiro</b></sub>
+        <sub><b>Letícia</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/samiferreira">
         <img src="https://avatars.githubusercontent.com/u/128096328?v=4" width="115" alt="Samira Ferreira"/><br />
-        <sub><b>Samira Ferreira</b></sub>
+        <sub><b>Samira</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/andreirce">
         <img src="https://avatars.githubusercontent.com/u/154296627?v=4" width="115" alt="Andrei Levi"/><br />
-        <sub><b>Andrei Levi</b></sub>
+        <sub><b>Andrei</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/hewelbelmonte">
         <img src="https://avatars.githubusercontent.com/u/130703340?v=4" width="115" alt="Andrei Levi"/><br />
-        <sub><b>Hewel Belmonte</b></sub>
+        <sub><b>Hewel</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/DeboraVitoria0">
         <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEgu119roHzCsXI8ajI1lZB8tiDtZJ4jPMW4b09UUVpJbOiWvT" width="115" alt="Débora Vitória"/><br />
-        <sub><b>Débora Vitória</b></sub>
+        <sub><b>Débora</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/GabrielRER">
         <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKtMxXEBCEdiDnewMl5Iga_8Q8_stIJaZDXnUbVv3aBcqk7_4Z" width="115" alt="Gabriel Ramon"/><br />
-        <sub><b>Gabriel Ramon</b></sub>
+        <sub><b>Gabriel</b></sub>
       </a>
     </td>
   </tr>
