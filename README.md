@@ -84,58 +84,70 @@ npm start
   <tr>
     <td align="center">
       <a href="https://github.com/ste-coding">
-        <img src="https://avatars.githubusercontent.com/u/83964857?v=4" width="115" alt="Stéphanie Cândido" id="image"/><br/>
-        <sub id="title"><b>Stéphanie Cândido</b></sub>
+        <img src="https://avatars.githubusercontent.com/u/83964857?v=4" class="avatar" alt="Stéphanie Cândido"/><br/>
+        <sub><b>Stéphanie</sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/Monteiro-Let">
-        <img src="https://avatars.githubusercontent.com/u/154276458?s=400&u=1526f34b9402fadbe89b685308ed1224f27e717e&v=4" width="115" alt="Letícia Monteiro" id="image"/><br/>
-        <sub><b>Letícia Monteiro</b></sub>
+        <img src="https://avatars.githubusercontent.com/u/154276458?s=400&u=1526f34b9402fadbe89b685308ed1224f27e717e&v=4" class="avatar" alt="Letícia Monteiro"/><br/>
+        <sub><b>Letícia</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/samiferreira">
-        <img src="https://avatars.githubusercontent.com/u/128096328?v=4" width="115" alt="Samira Ferreira" id="image"/><br/>
-        <sub><b>Samira Ferreira</b></sub>
+        <img src="https://avatars.githubusercontent.com/u/128096328?v=4" class="avatar" alt="Samira Ferreira"/><br/>
+        <sub><b>Samira</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/andreirce">
-        <img src="https://avatars.githubusercontent.com/u/154296627?v=4" width="115" alt="Andrei Levi" id="image"/><br/>
-        <sub><b>Andrei Levi</b></sub>
+        <img src="https://avatars.githubusercontent.com/u/154296627?v=4" class="avatar" alt="Andrei Levi"/><br/>
+        <sub><b>Andrei</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/hewelbelmonte">
-        <img src="https://avatars.githubusercontent.com/u/130703340?v=4" width="115" alt="Hewel Belmonte" id="image"/><br/>
-        <sub><b>Hewel Belmonte</b></sub>
+        <img src="https://avatars.githubusercontent.com/u/130703340?v=4" class="avatar" alt="Hewel Belmonte"/><br/>
+        <sub><b>Hewel</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/DeboraVitoria0">
-        <img src="https://cdn.discordapp.com/attachments/1272754250266578974/1273430138498973726/foto_perfil.jpg?ex=66be95bc&is=66bd443c&hm=0d7ef141e05a00b1efbcf47d29d717fe1ab241b14e97da67ff83889ef36b3ac9&" width="115" alt="Débora Vitória" id="image"/><br/>
-        <sub><b>Débora Vitória</b></sub>
+        <img src="https://cdn.discordapp.com/attachments/1272754250266578974/1273430138498973726/foto_perfil.jpg?ex=66be95bc&is=66bd443c&hm=0d7ef141e05a00b1efbcf47d29d717fe1ab241b14e97da67ff83889ef36b3ac9&" class="avatar" alt="Débora Vitória"/><br/>
+        <sub><b>Débora</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/GabrielRER">
-        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAFXrpV2sIWI8L_o4AX76NN2FPnznJapMmMyOUfCNg2Bc8vugQ" width="115" alt="Gabriel Ramon" id="image"/><br/>
-        <sub><b>Gabriel Ramon</b></sub>
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAFXrpV2sIWI8L_o4AX76NN2FPnznJapMmMyOUfCNg2Bc8vugQ" class="avatar" alt="Gabriel Ramon"/><br/>
+        <sub><b>Gabriel</b></sub>
       </a>
     </td>
   </tr>
 </table>
 
+<style>
+  table {
+    width: 100%;
+    table-layout: fixed;
+  }
+  td {
+    padding: 10px;
+  }
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  sub {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+</style>
+
+
 ## Licença🔓  <a name="licenca"></a>
 Este projeto é lincensiado por :[Licença GPL-3.0](https://github.com/ste-coding/squad4-projeto-final-M4?tab=GPL-3.0-1-ov-file)
-
-<style>
-  #image {
-    height: 115px
-  }
-  #title {
-    font-size: 11.5px;
-  }
-
-</style>
