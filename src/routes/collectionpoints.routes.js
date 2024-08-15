@@ -67,7 +67,9 @@ pointsRouter.get('/city/:city', getPointByCity);
  *               operating_hours:
  *                 type: string
  *               address_id:
- *                 type: integer
+ *                 type: string
+ *               category_accepted:
+ *                 type: string
  *     responses:
  *       201:
  *         description: Ponto de coleta criado com sucesso.
